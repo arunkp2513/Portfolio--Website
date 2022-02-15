@@ -8,10 +8,17 @@
 /*This is a pseudo class which targets all the elements within the <html> tag*/
 :root {
   /* Variables in CSS are defined with -- at the begining*/
+  --primary-color: #357b70;
+  --secondary-color: #e0b354;
+  --dark-grey: #2b2b2b;
+  --bg-color: #F9E9D0;
+  --bg-color2: rgba(60, 43, 17, 0.92);
+  --visit-color: #05676e;
+  --hover-color: #76357b;
 }
 
 body {
-  background-color: #F9E9D0;
+  background-color: var(--bg-color);
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -37,35 +44,21 @@ hr {
   margin-left: auto;
   margin-right: auto;
   height: 2px;
-  background-color: rgba(60, 43, 17, 0.92);
+  background-color: var(--bg-color2);
   opcaity: 0.5;
 }
 
 a {
   /* to access a CSS variable we need to use the var() function as shown below*/
-  color: #357b70;
+  color: var(--primary-color);
 }
 
 a:visited {
-  color: #05676e;
+  color: var(--visit-color);
 }
 
-a:active {
-  color: #76357b;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-a:hover {
-  color: #76357b;
-  text-decoration: none;
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-a:focus {
-  color: #76357b;
+a:active, a:hover, a:focus {
+  color: var(--hover-color);
   text-decoration: none;
   cursor: pointer;
   opacity: 0.7;
@@ -97,7 +90,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .button_secondary {
-  background-color: #e0b354;
+  background-color: var(--secondary-color);
   color: #2b2b2b;
 }
 
@@ -129,6 +122,10 @@ button:hover, button:focus, .button:hover, .button:focus {
 .about {
   max-width: 700px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.contact-form{
   text-align: center;
 }
 

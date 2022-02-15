@@ -111,6 +111,10 @@ button:hover, button:focus, .button:hover, .button:focus {
   text-align: center;
 }
 
+.contact-form{
+  text-align: center;
+}
+
 /* this styling will help to keep the actual width of 124px container mentioned to 100px even including the 20px padding and 4px borders.(this is very helpful when we are deciding the sizes with percentage value)*/
 * {
   box-sizing: border-box;
