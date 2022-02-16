@@ -38,7 +38,7 @@ hr {
   margin-right: auto;
   height: 2px;
   background-color: var(--bg-color2);
-  opcaity: 0.5;
+  opacity: 0.5;
 }
 
 a {
@@ -111,7 +111,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   text-align: center;
 }
 
-.contact-form{
+.contact-form {
   text-align: center;
 }
 
@@ -150,7 +150,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .navigation-list li {
   display: inline-block;
-  marging-left: 20px;
+  margin-left: 20px;
 }
 
 /* start grid fallback */
