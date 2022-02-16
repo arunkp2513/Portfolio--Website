@@ -8,13 +8,13 @@
 /*This is a pseudo class which targets all the elements within the <html> tag*/
 :root {
   /* Variables in CSS are defined with -- at the begining*/
-  --primary-color: #357b70;
-  --secondary-color: #e0b354;
+  --primary-color: #272727;
+  --secondary-color: #FFE400;
   --dark-grey: #2b2b2b;
-  --bg-color: #F9E9D0;
+  --bg-color: #747474;
   --bg-color2: rgba(60, 43, 17, 0.92);
-  --visit-color: #05676e;
-  --hover-color: #76357b;
+  --visit-color: #141414;
+  --hover-color: #272727;
 }
 
 body {
@@ -45,7 +45,7 @@ hr {
   margin-right: auto;
   height: 2px;
   background-color: var(--bg-color2);
-  opcaity: 0.5;
+  opacity: 0.5;
 }
 
 a {
@@ -67,7 +67,7 @@ a:active, a:hover, a:focus {
 button, .button {
   border: none;
   font-family: inherit;
-  background-color: #3E3530;
+  background-color: #14A76C;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -171,7 +171,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .navigation-list li {
   display: inline-block;
-  marging-left: 20px;
+  margin-left: 20px;
 }
 
 /* start grid fallback */
@@ -200,7 +200,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
 
   .projects__item {
-    background-color: #e0b354;
+    background-color: #61cfcb;
     width: auto;
     min-height: auto;
     margin: 0;
