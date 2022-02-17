@@ -50,25 +50,30 @@ a:visited {
   color: var(--visit-color);
 }
 
-a:active, a:hover, a:focus {
+a:hover {
   color: var(--hover-color);
   text-decoration: none;
   cursor: pointer;
-  opacity: 0.7; 
+  opacity: 0.7;
   background-color: #fa9370;
 }
 
-button, .button {
+a:active {
+  color: #d9dd23;
+  text-decoration: none;
+}
+
+.button {
   border: none;
   font-family: inherit;
-  background-color: #14A76C;
+  background-color: #14a76c;
   color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 4px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.3s, opacity;
-  /* Transitions can be specified in a single line*/
+  /* Transitions can be specified in a single line */
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
@@ -78,7 +83,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .button:hover {
   font-size: 18px;
-  /*when yoou hover over the button, the size of the button increases*/
+  /* when yoou hover over the button, the size of the button increases */
 }
 
 .button_secondary {
@@ -91,7 +96,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   width: 250px;
   height: 250px;
   margin-right: 40px;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .page-footer {
@@ -116,28 +121,30 @@ button:hover, button:focus, .button:hover, .button:focus {
   text-align: center;
 }
 
-/* this styling will help to keep the actual width of 124px container mentioned to 100px even including the 20px padding and 4px borders.(this is very helpful when we are deciding the sizes with percentage value)*/
+/* this styling will help to keep the actual width of 124px container mentioned to 100px even including the 20px padding and 4px borders.(this is very helpful when we are deciding the sizes with percentage value) */
 * {
   box-sizing: border-box;
 }
 
 .page-header {
-  /*parent container covers the entire width of the page with 20px of padding*/
+  /* parent container covers the entire width of the page with 20px of padding */
   display: flex;
   width: 100%;
   padding: 20px;
 }
 
 .page-header__item {
-  /*gives both the child items a similar base behaviour before overriding a particular one */
+  /* gives both the child items a similar base behaviour before overriding a particular one */
   flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
-  /*logo takes up 200 px space but we want the navigation list to take up the rest of the space and be right aligned*/
+  /* logo takes up 200 px space but we want the navigation list to take up the rest of the space and be right aligned */
   flex-grow: 1;
-  /*over riding the flex property*/
-  /*last-child is a pseudo selector which directs to the last child of the flex box item*/
+
+  /* over riding the flex property */
+
+  /* last-child is a pseudo selector which directs to the last child of the flex box item */
   text-align: right;
 }
 
@@ -169,11 +176,13 @@ button:hover, button:focus, .button:hover, .button:focus {
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /*Fr is a flex unit used to allocate available space to grid items. Instead of using 300px, for example, you can use 1fr for each value because each grid item should be the same size*/
+
+    /* Fr is a flex unit used to allocate available space to grid items. Instead of using 300px, for example, you can use 1fr for each value because each grid item should be the same size */
     grid-gap: 20px;
-    /* In addition to changing the pixel values to fr, you may also want to add some spacing between the grid items. Rather than using margin, you can use this*/
-    /*grid-template-columns: 300px 300px 300px; /*creates three columns with width of 300px each*/
-    /*grid-template-rows: 300px 300px; /*creates two rows with 300px each*/
+
+    /* In addition to changing the pixel values to fr, you may also want to add some spacing between the grid items. Rather than using margin, you can use this */
+    /*grid-template-columns: 300px 300px 300px; /*creates three columns with width of 300px each */
+    /* grid-template-rows: 300px 300px; /*creates two rows with 300px each */
   }
 
   .projects__item {
@@ -190,11 +199,11 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 @media all and (max-width: 500px) {
-
-  /*media queries- allows to specify sizes at which the rules should be applied*/
+  /* media queries- allows to specify sizes at which the rules should be applied */
   .projects {
     grid-template-columns: 1fr;
-    /*only propert that needs to be over-ride*/
+
+    /* only propert that needs to be over-ride */
   }
 }
 
@@ -210,7 +219,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
 
   .projects__item:last-child {
-    /* common propety to all the sizes*/
+    /* common propety to all the sizes */
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
@@ -220,10 +229,9 @@ button:hover, button:focus, .button:hover, .button:focus {
   }
 }
 
-/*CSS Animations*/
+/* CSS Animations */
 @keyframes color-change {
-
-  /*defining keyframe rule, color- change is simply a name given to animation(can be anything)*/
+  /* defining keyframe rule, color- change is simply a name given to animation(can be anything) */
   from {
     fill: #fcfcfc;
   }
@@ -235,7 +243,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .sun {
   animation: 4s color-change infinite alternate linear;
-  /* animation-duration animation animation-iteration-count animation-direction animation-timing-function*/
+
+  /* animation-duration animation animation-iteration-count animation-direction animation-timing-function */
 }
 
 @keyframes cloud-move {

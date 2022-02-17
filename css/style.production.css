@@ -57,12 +57,17 @@ a:visited {
   color: var(--visit-color);
 }
 
-a:active, a:hover, a:focus {
+ a:hover {
   color: var(--hover-color);
   text-decoration: none;
   cursor: pointer;
   opacity: 0.7;
   background-color: #fa9370;
+  font-size: 22px;
+}
+a:active{
+  color: #d9dd23;
+  text-decoration: none;
 }
 
 button, .button {
