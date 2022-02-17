@@ -141,9 +141,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .page-header__item:last-child {
   /* logo takes up 200 px space but we want the navigation list to take up the rest of the space and be right aligned */
   flex-grow: 1;
-
   /* over riding the flex property */
-
   /* last-child is a pseudo selector which directs to the last child of the flex box item */
   text-align: right;
 }
@@ -176,10 +174,8 @@ button:hover, button:focus, .button:hover, .button:focus {
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
     /* Fr is a flex unit used to allocate available space to grid items. Instead of using 300px, for example, you can use 1fr for each value because each grid item should be the same size */
     grid-gap: 20px;
-
     /* In addition to changing the pixel values to fr, you may also want to add some spacing between the grid items. Rather than using margin, you can use this */
     /*grid-template-columns: 300px 300px 300px; /*creates three columns with width of 300px each */
     /* grid-template-rows: 300px 300px; /*creates two rows with 300px each */
@@ -199,10 +195,10 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 @media all and (max-width: 500px) {
+
   /* media queries- allows to specify sizes at which the rules should be applied */
   .projects {
     grid-template-columns: 1fr;
-
     /* only propert that needs to be over-ride */
   }
 }
@@ -231,6 +227,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 /* CSS Animations */
 @keyframes color-change {
+
   /* defining keyframe rule, color- change is simply a name given to animation(can be anything) */
   from {
     fill: #fcfcfc;
@@ -243,7 +240,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .sun {
   animation: 4s color-change infinite alternate linear;
-
   /* animation-duration animation animation-iteration-count animation-direction animation-timing-function */
 }
 
