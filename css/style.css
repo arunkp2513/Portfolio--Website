@@ -54,7 +54,7 @@ a:active, a:hover, a:focus {
   color: var(--hover-color);
   text-decoration: none;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.7; 
   background-color: #fa9370;
 }
 
