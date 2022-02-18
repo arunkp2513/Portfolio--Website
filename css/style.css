@@ -89,6 +89,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .button_secondary {
   background-color: var(--secondary-color);
   color: #2b2b2b;
+  cursor:pointer;
 }
 
 .profile_potrait {
