@@ -11,7 +11,7 @@
   --primary-color: #272727;
   --secondary-color: #FFE400;
   --dark-grey: #2b2b2b;
-  --bg-color: #747474;
+  --bg-color: #d3d3d3;
   --bg-color2: rgba(60, 43, 17, 0.92);
   --visit-color: #141414;
   --hover-color: #272727;
@@ -63,7 +63,7 @@ a:visited {
   cursor: pointer;
   opacity: 0.7;
   background-color: #fa9370;
-  font-size: 22px;
+  
 }
 a:active{
   color: #d9dd23;
