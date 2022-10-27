@@ -98,10 +98,33 @@ button:focus,
   /*when yoou hover over the button, the size of the button increases*/
 }
 
-.button_secondary {
+/* .button_secondary {
   background-color: var(--secondary-color);
   color: #2b2b2b;
   cursor: pointer;
+}*/
+.button_secondary {
+  box-shadow: 0px 10px 14px -7px #9fb4f2;
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: azure;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #283966;
+}
+.button_secondary :hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+.button_secondary :active {
+  position: relative;
+  top: 1px;
 }
 
 .profile_potrait {
